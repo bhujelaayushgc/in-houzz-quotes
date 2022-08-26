@@ -1,12 +1,12 @@
 # in-Houzz Quotes - Quotes Russian Roulette :gun:
 
-URL: https://in-houzz-quotes.herokuapp.com/quotes
+:link: URL: https://in-houzz-quotes.herokuapp.com/quotes
 
 ---
 
 This is a Full-stack ROR app which returns a random quote from the awesome list of quotes :sunglasses:
 
-## Architecture Overview:
+## :blue_book: Architecture Overview:
 
 - Application consists of **single Controller** - `quotes` with single action - `index`.
 - Application exposes **two routes**:
@@ -96,10 +96,15 @@ This project uses RSpec for testing runs. Following tests are included:
 This should run both test specs.
 
 ## Continuous Integration - GitHub Actions
+![image](https://user-images.githubusercontent.com/46491954/186897896-58d73df8-5246-4713-8a6d-d25b0ed9805b.png)
+
 
 This project is using GitHub Actions to run the test suits (CI).
 
 The GitHub actions is triggerd on:
 
-- push on branches: ["develop", "test"]
+- push on branches: ["develop"]
 - pull_request on branches: ["main"]
+
+## Deployment - Heroku
+![image](https://user-images.githubusercontent.com/46491954/186897790-5c09fa73-22d2-468a-a4e5-65c0df769023.png)
