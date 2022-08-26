@@ -10,5 +10,4 @@ services:
       - "3000:3000"
     volumes:
       - ./:/usr/src/app
-    env_file: .env
     command: [bin/docker-entry, local]
