@@ -1,0 +1,29 @@
+#!/bin/bash
+
+set -e
+
+main() {
+    context="$1"
+
+    if [ -f tmp/pids/server.pid ]; then
+        rm -rf tmp/pids/server.pid
+    fi
+
+    if [[ $context == "local" ]]; then
+        echo "Context: local"
+        export RAILS_ENV=development
+        bin/dev
+    elif [[ $context == "staging" || $context == "production" ]]; then
+        echo "Context: ${context}"
+        echo "N/A"
+    else
+        echo "ERROR: Invalid Context"
+        echo "Valid contexts are: local|staging|production"
+        exit 1
+    fi
+
+}
+
+main "$@"
+
+set +e
