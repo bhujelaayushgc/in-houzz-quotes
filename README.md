@@ -82,7 +82,7 @@ This project uses RSpec for testing runs. Following tests are included:
 - Controller/Request Spec for Quotes
 - Routing Spec for Quotes
 
-### How to run test suit (From docker container)
+### How to run test suite (From docker container)
 
 - Enter the container
   ```
